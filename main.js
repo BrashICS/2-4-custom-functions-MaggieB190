@@ -37,6 +37,7 @@ function to_celsius() {
 //Part 3
 function roll_d10() {
     //the * 10) + 1) includes numbers 1-10 and not 0-10
+    //Math.floor is rounded to a whole number
     let number_rolled_10 = Number(Math.floor(Math.random() * 10) + 1);
     console.log(`You rolled a ${number_rolled_10}`);
 }
@@ -57,4 +58,18 @@ function triangle_area() {
     console.log(`The height of the triangle is ${triangle_height}`);
     let area = (triangle_base * triangle_height)/2
     console.log(`The area of the triangle is ${area}`);
+}
+
+//Other Practice
+
+function user_pick_random_range() {
+    let user_range = +prompt("What would you like the highest value to be for the random number generator?");
+    let random_number_generated = +(Math.floor(Math.random() * user_range) + 1);
+    console.log(`With ${user_range} as your highest value, your random number is ${random_number_generated}`);
+}
+
+function born_in() {
+    let user_age = +prompt("How old are you?");
+    let year_born = 2024 - user_age 
+    console.log(`You were born in ${year_born}`);
 }
