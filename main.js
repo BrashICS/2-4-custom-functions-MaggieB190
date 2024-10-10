@@ -61,6 +61,7 @@ function triangle_area() {
 }
 
 //Other Practice
+//I swear i did more but it just didnt all work out :(
 
 function user_pick_random_range() {
     let user_range = +prompt("What would you like the highest value to be for the random number generator?");
